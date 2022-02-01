@@ -11,12 +11,15 @@ class MainPage extends Component {
   render() {
     return (
       <div className='mainpage'>
-        <div style={{ paddingTop: "260px", display: "flex" }}>
+        <div style={{ paddingTop: "260px", display: "flex", flexWrap: "wrap" }}>
           <AdvertisementOne />
+          <AdvertisementFour />
           <AdvertisementFour />
           <AdvertisementOne />
           <AdvertisementOne />
           <AdvertisementOne />
+          <AdvertisementFour />
+          <AdvertisementFour />
         </div>
       </div>
     )

@@ -1,9 +1,9 @@
 .AdvertisementOne_main {
   height: 350px;
-  min-width: 330px;
+  min-width: 300px;
   background: white;
 
-  margin: 10px;
+  margin: 20px;
 }
 .AdvertisementOne_header {
   font-size: 21px;
@@ -17,7 +17,7 @@
   flex-wrap: wrap;
 }
 .ad_fourImage {
-  width: 135px;
+  width: 130px;
   height: 104.5px;
   margin-top: 5px;
   margin-left: 5px;
@@ -27,4 +27,6 @@
 .AdvertisementOne_footer {
   padding: 15px;
   margin-top: 5px;
+  color: #16363c;
+  font-size: 14px;
 }

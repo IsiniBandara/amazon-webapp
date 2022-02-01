@@ -1,9 +1,9 @@
 .AdvertisementOne_main {
   height: 350px;
-  width: 330px;
+  width: 300px;
   background: white;
 
-  margin: 10px;
+  margin: 18.5px;
 }
 .AdvertisementOne_header {
   font-size: 21px;
@@ -15,5 +15,8 @@
   padding-left: 15px;
 }
 .AdvertisementOne_footer {
+  margin-top: 0px;
   padding: 15px;
+  color: #16363c;
+  font-size: 14px;
 }
