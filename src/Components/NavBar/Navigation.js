@@ -1,5 +1,6 @@
 import React, { Component } from "react" //short cut "imrc"
 import { CartContext } from "../CartContext"
+import { Link } from "react-router-dom"
 import "./NavBar.css"
 
 //short cut "ccc"
@@ -15,7 +16,9 @@ class NavBar extends Component {
     return (
       <div>
         <div className='navbar_component'>
-          <div className='navbar_logo'></div>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <div className='navbar_logo'></div>
+          </Link>
           <div className='navbar_locator'>
             <div className='navbar_locatorImage'></div>
             <div className='navbar_location'>Banglore</div>
@@ -50,11 +53,13 @@ class NavBar extends Component {
             <div style={{ fontSize: "12px" }}>Returns </div>
             <div style={{ fontWeight: "bold", fontSize: "15px" }}>& Orders</div>
           </div>
-          <div className='navbar_text navbar_cart'>
-            <div src='' className='cart_image'></div>
-            <div className='cart_item'>{size}</div>
-            <div className='navbar_text_cart'>Cart</div>
-          </div>
+          <Link to={"/checkout"} style={{ textDecoration: "none" }}>
+            <div className='navbar_text navbar_cart'>
+              <div src='' className='cart_image'></div>
+              <div className='cart_item'>{size}</div>
+              <div className='navbar_text_cart'>Cart</div>
+            </div>
+          </Link>
         </div>
         <div className='navbar_footer'>
           <div className='navbar_footer_text'>Best Seller</div>

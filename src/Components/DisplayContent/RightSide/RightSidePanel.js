@@ -77,7 +77,7 @@ function RightSidePanel(props) {
       <Product /> */}
 
       {listOfProduct.map((item) => [
-        <Link to={"/order/" + item.id}>
+        <Link to={"/order/" + item.id} style={{ textDecoration: "none" }}>
           <Product
             definition={item}
             // rating={item.rating}
